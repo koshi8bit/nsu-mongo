@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/py/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/py/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/py/docker-builder/copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/docker-builder/copy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/py/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/telegram_my.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/telegram_my.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

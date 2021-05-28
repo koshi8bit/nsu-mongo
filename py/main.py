@@ -5,7 +5,8 @@ import os
 from dotenv import load_dotenv
 import traceback
 
-DOMAIN = '0.0.0.0'
+# DOMAIN = '0.0.0.0'
+DOMAIN = '172.17.0.3'
 PORT = 27017
 
 app = Flask(__name__)
@@ -58,11 +59,12 @@ def mongo():
         return f'error: {str(err)}'
 
     except Exception as ex:
-        message = f'*ERROR* Exception: {str(ex)}'
+        message = f'ERROR: {str(ex)}'
         teleg.send(message)
         ex_test = traceback.format_exc()
         teleg.send_text_as_file(ex_test)
-        raise ex
+        # raise ex
+        return f'{str(message)}'
 
 
 if __name__ == '__main__':
@@ -70,6 +72,7 @@ if __name__ == '__main__':
     # app.run(debug=True)
     load_dotenv()
     teleg = TelegramMy(os.getenv('TELEGRAMTOKEN'), os.getenv('CHATID'))
+    teleg.set_project_prefix('py+mongo')
     # teleg.send('test')
 
     app.run(host='0.0.0.0', port=8080)
