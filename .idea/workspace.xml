@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="46e086b3-4332-4963-894a-6c3d9415e086" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/py/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/docker-builder/copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/docker-builder/copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

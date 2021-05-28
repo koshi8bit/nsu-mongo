@@ -12,18 +12,6 @@ def i_am_alive():
     return 'I am alive! <a href="mongo">Try MongoDB</a>'
 
 
-@app.errorhandler(404)
-def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return '404'
-
-
-@app.errorhandler(500)
-def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return f'500 {str(e)}'
-
-
 @app.route('/mongo', methods=['GET'])
 def mongo():
     try:

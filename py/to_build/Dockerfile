@@ -6,6 +6,7 @@ WORKDIR /usr/src/app/
 COPY . /usr/src/app
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8082
+EXPOSE 8080
+EXPOSE 27017
 
 CMD ["python", "main.py"]

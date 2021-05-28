@@ -9,11 +9,23 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def i_am_alive():
-    return "I am alive!"
+    return 'I am alive! <a href="mongo">Try MongoDB</a>'
 
 
-@app.route('/process', methods=['GET'])
-def process():
+@app.errorhandler(404)
+def page_not_found(e):
+    # note that we set the 404 status explicitly
+    return '404'
+
+
+@app.errorhandler(500)
+def page_not_found(e):
+    # note that we set the 404 status explicitly
+    return f'500 {str(e)}'
+
+
+@app.route('/mongo', methods=['GET'])
+def mongo():
     try:
         client = MongoClient(
             host=[DOMAIN + ":" + str(PORT)],
@@ -30,7 +42,8 @@ def process():
 
     except errors.ServerSelectionTimeoutError as err:
         print("pymongo ERROR:", err)
-        return "error"
+        return f'error: {str(err)}'
+
 
 if __name__ == '__main__':
     # app.run(debug=True, port=8080)

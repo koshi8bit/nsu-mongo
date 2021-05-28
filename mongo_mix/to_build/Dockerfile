@@ -1,3 +1,6 @@
+FROM mongo:latest
+EXPOSE 27017
+
 FROM python:3.9
 
 RUN mkdir -p /usr/src/app/
@@ -10,3 +13,5 @@ EXPOSE 8080
 EXPOSE 27017
 
 CMD ["python", "main.py"]
+
+
