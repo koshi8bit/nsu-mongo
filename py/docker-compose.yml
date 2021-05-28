@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  py-mongo:
+    build:
+      context: /home/anna/mongo
+    volumes:
+      - /home/anna/mongo/db:/data/db
+      - /home/anna/mongo/app:/var/www/html
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=1234
