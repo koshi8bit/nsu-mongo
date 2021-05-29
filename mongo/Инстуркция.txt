@@ -1,3 +1,6 @@
+https://kb.objectrocket.com/mongo-db/use-docker-and-python-for-a-mongodb-application-1046
+
+
 Создаем и запускаем приложение на языке Python с использованием MongoDB.
 
 1) Устанавливаем docker и docker-compose
