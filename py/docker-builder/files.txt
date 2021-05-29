@@ -1,5 +1,4 @@
 main.py
-docker-compose.yml
 Dockerfile
 requirements.txt
 telegram_my.py

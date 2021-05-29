@@ -7,11 +7,11 @@ sudo apt-get install docker-compose
 sudo service docker start
 
 2) Создаем файл docker-compose.yml или берем такой файл из архива с этой инструкцией и меняем там:
-context: /home/anna/mongo (меняем на путь к папке, где лежит ваш файл docker-compose.yml)
+context: /home/test/mongo (меняем на путь к папке, где лежит ваш файл docker-compose.yml)
 volumes:
-      - /home/anna/mongo/db:/data/db
-      - /home/anna/mongo/app:/var/www/html
-меняем /home/anna/mongo/db на путь, где у вас будет находится база данных (лучше создать отдельную пустую папку).
+      - /home/test/mongo/db:/data/db
+      - /home/test/mongo/app:/var/www/html
+меняем /home/test/mongo/db на путь, где у вас будет находится база данных (лучше создать отдельную пустую папку).
 home/anna/mongo/app на путь, где будет находиться .py файл с приложением.
 Так же можно указать другой логин и пароль в MONGO_INITDB_ROOT_USERNAME и MONGO_INITDB_ROOT_PASSWORD, если вам требуется больше безопастности.
 
